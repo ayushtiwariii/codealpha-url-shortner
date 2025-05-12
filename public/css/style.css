@@ -1,0 +1,158 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #f0f4f8; /* Light background for the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+/* Container Styles */
+.container {
+    width: 95%;
+    max-width: 1200px;
+    background: rgba(38, 70, 83, 0.8); /* Glassmorphism effect with opacity */
+    backdrop-filter: blur(12px); /* Blurred background */
+    border-radius: 20px;
+    padding: 80px 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading Styles */
+/* Heading Styles */
+.container .heading {
+    font-size: 72px;
+    color: #e9c46a; /* Darker text color */
+    background: linear-gradient(90deg, rgba(233, 196, 106, 1) 0%, rgba(38, 70, 83, 0.6) 100%); /* More subtle gradient */
+    -webkit-background-clip: text;
+    color: ;
+    animation: glowingText 2s ease-in-out infinite alternate;
+}
+
+/* Glowing text animation */
+@keyframes glowingText {
+    0% {
+        text-shadow: 0 0 15px rgba(233, 196, 106, 0.6), 0 0 30px rgba(233, 196, 106, 0.4);
+    }
+    100% {
+        text-shadow: 0 0 25px rgba(233, 196, 106, 0.8), 0 0 40px rgba(233, 196, 106, 0.6);
+    }
+}
+
+
+/* Form Styles */
+div.form {
+    padding: 30px 0;
+}
+
+div.form form input {
+    padding: 12px 30px;
+    width: 80%;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 2px solid #264653;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #264653;
+    transition: 0.3s;
+}
+
+div.form form input:focus {
+    outline: none;
+    border-color: #2a9d8f;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 8px rgba(42, 157, 143, 0.7);
+}
+
+div.form form button {
+    border: 0;
+    outline: none;
+    background-color: #2a9d8f;
+    padding: 10px 24px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+div.form form button:hover {
+    background-color: #264653;
+    transform: scale(1.05);
+}
+
+/* Link-box Styles */
+.link-box {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(233, 196, 106, 0.8);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.link-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.link-box .full,
+.link-box .short {
+    width: 40%;
+    margin-right: 10px;
+}
+
+.link-box div a {
+    color: #264653;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link-box div a:hover {
+    color: #2a9d8f;
+}
+
+/* Clicks Badge Styles */
+.clicks {
+    height: 30px;
+    width: 30px;
+    background: #2a9d8f;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Delete Button Styles */
+.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.delete:hover {
+    transform: scale(1.1);
+}
+
+.delete span {
+    color: #d11a2a;
+    font-size: 24px;
+}
